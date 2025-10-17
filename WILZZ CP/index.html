@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PteroCPanel Modern</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1>PteroCPanel Dashboard</h1>
+  </nav>
+
+  <section class="main">
+    <div class="card">
+      <h2>Buat Server Instan</h2>
+      <label>Nama Server</label>
+      <input type="text" id="serverName" placeholder="Nama server..." />
+
+      <label>Pilih RAM (MB)</label>
+      <select id="ramSelect">
+        <option value="1024">1 GB</option>
+        <option value="2048">2 GB</option>
+        <option value="4096">4 GB</option>
+        <option value="8192">8 GB</option>
+        <option value="unlimited">Unlimited</option>
+      </select>
+
+      <button id="createBtn">Create Server</button>
+      <p id="status"></p>
+    </div>
+
+    <div class="card">
+      <h2>Daftar Server Aktif</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Domain</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="serverTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Wilzz Official Dashboard</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
